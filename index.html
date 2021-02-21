@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pierwszy szablon</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="https://kit.fontawesome.com/a4102c8cb0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <header>
+        <div class="welcome">
+            <p>witaj!</p>
+            <h1>jestem Agnieszka Łotecka</h1>
+            <hr>
+            <h2>Tworzę strony internetowe</h2>
+            <button>Sprawdź co potrafię</button>
+        </div>
+    </header>
+
+    <section class="about_me">
+        <h1>O mnie</h1>
+        <hr>
+        <p>Hej jestem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium possimus cupiditate unde maiores, mollitia architecto, quo laudantium, illo fugit vero molestiae eius ea hic dolores iusto rem. Non, tenetur dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consequatur molestiae, officia repellendus iusto incidunt vitae asperiores consectetur, id perferendis impedit omnis eius tempore consequuntur deleniti nemo nostrum numquam tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam, fugiat dignissimos nihil sit eos repudiandae laudantium possimus culpa tenetur maxime nemo alias, porro quos eum illum magni perferendis soluta.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, esse reprehenderit ratione sint dolor. Quis illo libero nisi minus atque incidunt quidem, vitae aperiam, cupiditate beatae iure porro molestias magnam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, voluptatibus! Eum quo facilis, ab optio atque saepe, nam doloribus ducimus earum dolorem adipisci illo error ratione cumque quisquam! Harum, rem!</p>
+    </section>
+
+    <section class="motto">
+        <div class="bg">
+            <h1>Moje życiowe motto</h1>
+            <p class="text">Kiedy chcę pobudzić swój mózg do pracy, włączam komputer. Kiedy chcę odpocząć, włączam telewizor.</p>
+            <p class="author">Steve Jobs</p>
+        </div>
+    </section>
+
+    <section class="skills clearfix">
+        <h1>To już potrafię</h1>
+        <hr>
+        <div class="container clearfix">
+            <div class="container_icons">
+                <div class="icons">
+                    <i class="fab fa-html5"></i>
+                </div>
+            </div>
+            <div class="container_icons">
+                <div class="icons">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+            </div>
+            <div class="container_icons">
+                <div class="icons">
+                    <i class="fab fa-js"></i>
+                </div>
+            </div>
+            <div class="container_icons">
+                <div class="icons">
+                    <i class="fab fa-java"></i>
+                </div>
+            </div>
+            <div class="container_icons">
+                <div class="icons">
+                    <i class="fab fa-wordpress"></i>
+                </div>
+            </div>
+            <div class="container_icons">
+                <div class="icons">
+                    <i class="fab fa-git"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hobby">
+        <h1>W wolnym czasie uwielbiam</h1>
+        <div class="item">
+            <p>Chodzić po górach</p>
+        </div>
+        <div class="item">
+            <p>Zdobywać wiedzę</p>
+        </div>
+        <div class="item">
+            <p>Zmieniać świat</p>
+        </div>
+        <div class="item">
+            <p>Jeść owoce i warzywa</p>
+        </div>
+    </section>
+
+
+    <footer id="main-footer">Copyright &copy; 2020 Agnieszka Łotecka</footer>
+
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $(".welcome button").on("click", function() {
+            $("body, html").animate({
+                scrollTop: $(".skills").offset().top
+            }, 500)
+        })
+
+    </script>
+
+
+</body>
+
+</html>

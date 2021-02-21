@@ -1,0 +1,631 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+html {
+    font-family: arial, sans-serif;
+}
+
+header {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    max-width: 1920px;
+    background-image: url("images/computer4.jpg");
+    background-attachment: inherit;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header div.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+    left: 2%;
+    right: 2%;
+    font-family: 'Saira Condensed',
+        sans-serif;
+    line-height: 2.5;
+    color: black;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+header p {
+    margin-top: 5%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+header hr {
+    margin: 1%;
+    background-color: #D66262;
+    width: 60%;
+}
+
+
+header h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+button {
+    margin-top: 15px;
+    font-weight: 300px;
+    line-height: 32px;
+    padding: 0 20px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #D66262;
+    font-size: 12px;
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    header button {
+        margin-top: 24px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    header h2 {
+        font-size: 22px;
+    }
+
+    header button {
+        margin-top: 40px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+    header p {
+        font-size: 50px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    header h2 {
+        font-size: 34px;
+    }
+
+    header button {
+        margin-top: 60px;
+        line-height: 60px;
+        font-size: 24px;
+    }
+}
+
+
+@media (orientation: landscape) {
+    header {
+        height: 100vh;
+    }
+
+    header button {
+        margin-top: 20px;
+    }
+
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+    header p {
+        margin-top: 2px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    header button {
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    header p {
+        margin-top: 60px;
+        font-size: 30px;
+    }
+
+    header h1 {
+        margin-top: 40px;
+        font-size: 34px;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    header button {
+        margin-top: 50px;
+        font-size: 20px;
+        line-height: 70px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+    header p {
+        margin-top: 60px;
+        font-size: 46px;
+    }
+
+    header h1 {
+        margin-top: 40px;
+        font-size: 40px;
+    }
+
+    header h2 {
+        font-size: 34px;
+    }
+
+    header button {
+        margin-top: 40px;
+        font-size: 26px;
+        line-height: 70px;
+        padding: 0 40px;
+        border-width: 2px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+    header p {
+        margin-top: 60px;
+        font-size: 46px;
+    }
+
+    header h1 {
+        margin-top: 40px;
+        font-size: 40px;
+    }
+
+    header h2 {
+        font-size: 34px;
+    }
+
+    header button {
+        line-height: 70px;
+    }
+}
+
+@media (min-width: 1024px) {
+    header button {
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    header button:hover {
+        background-color: #fff;
+        color: #111;
+    }
+
+}
+
+
+
+
+/* sekcja 1 - o mnie */
+
+.about_me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3%;
+    padding: 30px 10px;
+}
+
+.about_me h1 {
+    font-family: 'Saira Condensed',
+        sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+hr {
+    margin: 1%;
+    background-color: black;
+    width: 40%;
+}
+
+.about_me p {
+    margin-top: 3%;
+    font-family: 'Saira', sans-serif;
+    font-size: 16px;
+    line-height: 2;
+}
+
+@media (orientation: portrait) and (min-width: 400px) {
+    .about_me h1 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 768px) {
+    .about_me h1 {
+        font-size: 48px;
+    }
+
+    .about_me p {
+        font-size: 26px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 1020px) {
+    .about_me h1 {
+        font-size: 40px;
+    }
+
+    .about_me p {
+        font-size: 20px;
+    }
+}
+
+@media (orientation: landscape) {
+    .about_me h1 {
+        font-size: 24px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 400px) {
+    .about_me h1 {
+        font-size: 22px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1020px) {
+    .about_me h1 {
+        font-size: 40px;
+    }
+
+    .about_me p {
+        font-size: 20px;
+    }
+}
+
+/* sekcja 2 - motto  */
+
+.motto {
+    background-image: url("images/mount.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+}
+
+.motto h1 {
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.motto p {
+    font-family: 'Saira', sans-serif;
+    font-size: 16px;
+}
+
+.motto p.author {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.motto .bg {
+    padding: 30px 10px;
+    background-color: rgba(0, 63, 114, 0.5);
+}
+
+@media (orientation: landscape) {
+    .motto p {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .motto .bg {
+        padding: 50px 10px;
+
+    }
+
+    .motto h1 {
+        font-size: 48px;
+        margin-bottom: 35px;
+
+    }
+
+    .motto p {
+        font-size: 26px;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .motto p.author {
+        margin-top: 40px;
+        font-size: 18px;
+    }
+}
+
+
+/* sekcja 3 - moje umiejętności */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px auto;
+    text-align: center;
+}
+
+.skills h1 {
+    font-family: 'Saira Condensed',
+        sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    margin-top: 45px;
+}
+
+hr {
+    margin: 1%;
+    background-color: black;
+    width: 40%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container_icons {
+    flex-basis: 100%;
+    margin: 10px;
+    padding: 10px 20px;
+
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+
+}
+
+.icons {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #f2f1ed;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.icons i {
+    color: black;
+    font-size: 4em;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+
+}
+
+.icons i:hover {
+    transform: scale(1.2);
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+    .skills h1 {
+        font-size: 22px;
+    }
+
+    .container_icons {
+        flex-basis: 30%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 1020pxpx) {
+    .skills h1 {
+        font-size: 40px;
+    }
+
+    .container_icons {
+        flex-basis: 30%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 410px) {
+    .skills h1 {
+        font-size: 22px;
+    }
+
+    .container_icons {
+        flex-basis: 30%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1020px) {
+    .skills h1 {
+        font-size: 40px;
+    }
+
+    /*
+    .container {
+        box-shadow: 0px 6px 31px -6px rgba(0, 0, 0, 0.75);
+        max-width: 1200px;
+        padding: 30px;
+        margin: 20px;
+    }
+*/
+    .container_icons {
+        flex-basis: 30%;
+    }
+}
+
+/* sekcja 4 - hobby  */
+
+.hobby {
+    max-width: 1920;
+    margin: 0 auto;
+}
+
+.hobby .item {
+    height: 25vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hobby .item:nth-of-type(1) {
+    background-image: url(images/boby1.jpg);
+}
+
+.hobby .item:nth-of-type(2) {
+    background-image: url(images/hobby2.jpg);
+}
+
+.hobby .item:nth-of-type(3) {
+    background-image: url(images/hobby3.jpg);
+}
+
+.hobby .item:nth-of-type(4) {
+    background-image: url(images/hobby4.jpg);
+}
+
+.hobby .item p {
+    font-family: 'saira', sans-serif;
+    color: white;
+    text-align: center;
+    /*  line-height: 25vh;*/
+    text-shadow: 0 0 4px black;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.hobby h1 {
+    font-family: "Saira Condensed", sans-serif;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+@media (min-width: 533px) {
+    .hobby .item {
+        float: left;
+        width: 50%;
+        height: 40vh;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .hobby h1 {
+        font-size: 40px;
+        margin-top: 40px;
+        margin-bottom: 35px;
+
+    }
+
+    .hobby .item p {
+        font-size: 30px;
+        padding: 15px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hobby .item p {
+        padding: 0;
+        line-height: 40vh;
+        opacity: 0;
+        transition: 1s;
+        cursor: default;
+    }
+
+    .hobby .item:hover p {
+        opacity: 1;
+    }
+
+    .hobby .item {
+        background-size: 100%;
+        transition: 1s;
+    }
+
+    .hobby .item:hover {
+        background-size: 130%;
+    }
+
+}
+
+@media (min-width: 1600px) {
+    .hobby h1 {
+        font-size: 40px;
+        margin-top: 50px;
+        margin-bottom: 45px;
+
+    }
+
+    .hobby .item p {
+        font-size: 40px;
+    }
+}
+
+/* footer */
+#main-footer {
+    line-height: 80px;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    font-family: saira, sans-serif;
+     color: black;
+/*    padding: 30px;*/
+    font-size: 20px;
+
+}
